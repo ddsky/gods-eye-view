@@ -221,6 +221,10 @@ const LAYER_ALIASES = new Map([
   ['license plate readers', 'alpr-cameras'],
   ['license plate cameras', 'alpr-cameras'],
   ['plate readers', 'alpr-cameras'],
+  ['news', 'world-news'],
+  ['world news', 'world-news'],
+  ['headlines', 'world-news'],
+  ['news headlines', 'world-news'],
 ]);
 
 const CITY_ALIASES = new Map([
@@ -4090,6 +4094,7 @@ function layerTitle(layerId) {
   if (layerId === 'local-dams') return 'Dam';
   if (layerId === 'telegeography-submarine-cables') return 'Submarine Cable';
   if (layerId === 'local-firms') return 'Active Fire';
+  if (layerId === 'world-news') return 'News headline';
   return layerId || 'Entity';
 }
 
