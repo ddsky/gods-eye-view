@@ -14,7 +14,8 @@ const OPENAI_REALTIME_CONTEXT_TOKENS_DEFAULT = 3000;
 
 const OPENAI_REALTIME_CONTEXT_RETENTION_DEFAULT = 0.5;
 
-const OPENAI_HUD_SUMMARY_MODEL_DEFAULT = 'gpt-5-nano';
+// OpenAI retires gpt-5-nano on 2026-12-11; its successor takes 'none', not 'minimal', as its lowest effort.
+const OPENAI_HUD_SUMMARY_MODEL_DEFAULT = 'gpt-5.6-luna';
 
 export {
   OPENAI_HUD_SUMMARY_MODEL_DEFAULT,

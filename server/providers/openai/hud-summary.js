@@ -69,7 +69,7 @@ async function handleHudSummary(req, res) {
           'Output exactly five words with no title, punctuation, markdown, or introductory phrase.',
         ].join(' '),
         input: JSON.stringify(context),
-        reasoning: { effort: 'minimal' },
+        reasoning: { effort: 'none' },
         max_output_tokens: 100,
       }),
     });
